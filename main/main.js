@@ -1,4 +1,4 @@
-import { loadPokemons } from "./pokemons.js";
+import { loadPokemons } from "../pokemon/pokemons.js";
 
 const container = document.getElementById("pokemons");
 const input = document.getElementById("numPokemons");
@@ -17,7 +17,7 @@ button.addEventListener("click", async () => {
   pokemons.forEach((name) => {
     const div = document.createElement("div");
     div.innerHTML = `
-    <a href="/pokemon?id=${name}">Name: ${name}</a>
+    <a href="../pokemon/pokemon?id=${name}">Name: ${name}</a>
   `;
     container.appendChild(div);
   });
