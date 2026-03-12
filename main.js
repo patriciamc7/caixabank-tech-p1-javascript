@@ -1,8 +1,8 @@
 import { writeFile } from "fs/promises";
-import { render } from "./render.js";
-import { loadUsers } from "./users.js";
+import { loadPokemons } from "./pokemons.js";
 
-const users = await loadUsers(100);
-const html = render(users);
-await writeFile('users.html', html);
+const pokemons = await loadPokemons(3);
+console.log(pokemons);
+// const html = render(pokemons);
+// await writeFile('index.html', html);
 
