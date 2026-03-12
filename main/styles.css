@@ -1,6 +1,6 @@
 @font-face {
   font-family: "PokemonGB";
-  src: url("fonts/Pokemon_GB.ttf");
+  src: url("../fonts/Pokemon_GB.ttf");
 }
 
 body {
@@ -24,7 +24,7 @@ h1 {
   grid-template-columns: 1fr auto auto;
   align-items: center;
 
-  background: #ff0400;
+  background: #d32f2f;
   padding: 15px 20px;
   border-radius: 12px;
 
