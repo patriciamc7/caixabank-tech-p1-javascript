@@ -1,0 +1,81 @@
+@font-face {
+  font-family: "PokemonGB";
+  src: url("fonts/Pokemon_GB.ttf");
+}
+
+body {
+  background-color: #d8f8f8;
+  margin: 20px;
+  text-align: center;
+}
+
+* {
+  font-family: "PokemonGB", monospace;
+  letter-spacing: -1px;
+}
+
+h1 {
+  color: #ffffff;
+  text-align: left;
+}
+
+#controls {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  align-items: center;
+
+  background: #ff0400;
+  padding: 15px 20px;
+  border-radius: 12px;
+
+  margin: 20px auto;
+  gap: 15px;
+}
+
+input {
+  padding: 8px;
+  width: 170px;
+  border-radius: 35px;
+  text-align: center;
+  outline: none;
+}
+
+button {
+  padding: 8px 14px;
+  font-size: 16px;
+  background-color: #0060f0;
+  color: white;
+  border-radius: 35px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0041a3;
+}
+
+#pokemons {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 30px;
+  margin-top: 20px;
+}
+
+a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  height: 30px;
+  background: #50a772;
+  border-radius: 10px;
+  padding: 10px;
+  text-decoration: none;
+  color: #ffffff;
+
+  font-size: clamp(11px, 2vw, 15px);
+}
+
+a:hover {
+  background-color: #377950;
+}

@@ -17,7 +17,7 @@ button.addEventListener("click", async () => {
   pokemons.forEach((name) => {
     const div = document.createElement("div");
     div.innerHTML = `
-    <a href="../pokemon/pokemon?id=${name}">Name: ${name}</a>
+    <a href="../pokemon/pokemon?id=${name}">${name}</a>
   `;
     container.appendChild(div);
   });
